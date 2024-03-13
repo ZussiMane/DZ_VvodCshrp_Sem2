@@ -73,3 +73,17 @@
 // 40 => 4
 // 96 => 9
 // 72 => 7
+
+Console.WriteLine("Введите целое положительное число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+if (a >= 10 && a <= 99)
+{
+    int firstDigit = a / 10;
+    int secondDigit = a % 10;
+    int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+    Console.WriteLine(maxDigit);
+}
+else
+{
+    Console.WriteLine("Ошибка ввода! Смотри условие!");
+}
