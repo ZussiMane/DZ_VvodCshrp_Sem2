@@ -95,3 +95,25 @@
 // 568 => 5,6,8
 // 8 => 8
 // 9542 => 9,5,4,2
+Console.Write("Введите натуральное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number < 10)
+{
+Console.WriteLine(number);
+}
+else
+{
+while (number > 0)
+{
+int currentDigit = number % 10;
+number = number / 10;
+if (number > 0)
+{
+Console.Write(currentDigit + ",");
+}
+else
+{
+Console.WriteLine(currentDigit);
+}
+}
+}
