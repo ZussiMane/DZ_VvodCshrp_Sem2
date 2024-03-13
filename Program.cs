@@ -74,16 +74,24 @@
 // 96 => 9
 // 72 => 7
 
-Console.WriteLine("Введите целое положительное число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-if (a >= 10 && a <= 99)
-{
-    int firstDigit = a / 10;
-    int secondDigit = a % 10;
-    int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
-    Console.WriteLine(maxDigit);
-}
-else
-{
-    Console.WriteLine("Ошибка ввода! Смотри условие!");
-}
+// Console.WriteLine("Введите целое положительное число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// if (a >= 10 && a <= 99)
+// {
+//     int firstDigit = a / 10;
+//     int secondDigit = a % 10;
+//     int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+//     Console.WriteLine(maxDigit);
+// }
+// else
+// {
+//     Console.WriteLine("Ошибка ввода! Смотри условие!");
+// }
+// --------------------------------------------------------------//
+// Задача 4: Напишите программу, которая на вход 
+// принимает натуральное число N, а на выходе 
+// показывает его цифры через запятую.
+// Пример:
+// 568 => 5,6,8
+// 8 => 8
+// 9542 => 9,5,4,2
